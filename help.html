@@ -9,8 +9,9 @@
 	<title>Chelfie - Help </title>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
+
 	<link href"css/animate.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
 
 </head>
 
@@ -47,7 +48,7 @@
 									<img src="http://54.166.30.152/content/logo/chelfiewhite_logo.png" /></a>
 							</div>
 							<div class="logo-mobile show-xs hidden-sm hidden-md hidden-lg">
-								<img src="http://54.166.30.152/content/logo/logo_mobile.png" /></a>
+								<a href="index.html"><img src="http://54.166.30.152/content/logo/logo_mobile.png" /></a>
 							</div>
 						</div>
 					</div>
@@ -550,6 +551,12 @@
 	<script src="js/bootstrap.min.js"></script>
 
 	<script src="js/help.js"></script>
+	<script>
+	jQuery(window).ready(function(){
+		$('.btn-slideshow').addClass('animated pulse');
+		$('.navbar-nav>li').addClass('animated pulse');
+	});
+	</script>
 </body>
 
 </html>

@@ -8,8 +8,9 @@
 			<title>Chelfie - App </title>
 			<!-- Bootstrap -->
 			<link href="css/bootstrap.min.css" rel="stylesheet">
-			<link href="css/custom.css" rel="stylesheet">
 			<link href"css/animate.css" rel="stylesheet">
+
+			<link href="css/custom.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -45,7 +46,7 @@
 								<img class="img-responsive" src="http://54.166.30.152/content/logo/chelfiewhite_logo.png" /></a>
 							</div>
 							<div class="logo-mobile show-xs hidden-sm hidden-md hidden-lg">
-							<img class="img-responsive" src="http://54.166.30.152/content/logo/logo_mobile.png"  /></a>
+							<a href="index.html"><img class="img-responsive" src="http://54.166.30.152/content/logo/logo_mobile.png"  /></a>
 						</div>
 					</div>
 				</div>
@@ -304,25 +305,10 @@
 						<!-- Include all compiled plugins (below), or include individual files as needed -->
 						<script src="js/bootstrap.min.js"></script>
 						<script>
-									$(document).ready(function(){
-						    $('.btn-primary').each(function() {
-						        animationHover(this, 'bounce');
-						    });
+						jQuery(window).ready(function(){
+							$('.btn-slideshow').addClass('animated pulse');
+							$('.navbar-nav>li').addClass('animated pulse');
 						});
-
-						function animationHover(element, animation){
-			    element = $(element);
-			    element.hover(
-			        function() {
-			            element.addClass('animated ' + animation);
-			        },
-			        function(){
-			            //wait for animation to finish before removing classes
-			            window.setTimeout( function(){
-			                element.removeClass('animated ' + animation);
-			            }, 2000);
-			        });
-			}
 						</script>
 					</body>
 				</html>
