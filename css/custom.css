@@ -3,10 +3,20 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
-*{
+body{
   font-family: 'Lato'!important;
 }
 /*-----BACKGROUND-----*/
+.partner-page .carousel-control{
+  display: flex;
+align-items: center;
+}
+.partner-page .carousel-control .fa{
+  font-size: 70px;
+}
+.partner-page .carousel-control.right{
+  right: 120px;
+}
 .gradient {
   display:block;
   position:absolute;
@@ -690,14 +700,37 @@ ul.social-icons {
   font-family: 'Lato'; }
 
     /*-----MEDIA PAGE-----*/
+.boxes-container{
 
-    .boxes { border:1px solid #BBBBBB;
-            margin-bottom: 10px; }
-
-    .img-upper {  padding: 10px; }
+}
+    .boxes {
+      margin-bottom: 75px;
+          width: 40%;
+          min-width: 350px;
+          margin-right: 40px;
+      }
+    .boxes a{
+      color: #000;
+    }
+    .boxes-row{
+      display: flex;
+      flex-wrap: wrap;
+          justify-content: center;
+    }
+    .boxes a:hover{
+      text-decoration: none;
+    }
+    .privacyP{
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .boxes img{
+      width: 100%;
+    }
+    .img-upper { }
 
     .description { text-align: justify;
-                   padding: 10px; }
+                   padding: 10px; color:#000;}
 
     .btn-primary { margin-top: 10px; }
 
@@ -989,7 +1022,16 @@ ul.social-icons {
   #myCarousel .carousel-control {
     display: none;
   }
-
+  .partner-page   #myCarousel .carousel-control {
+      display: flex;
+    }
+    .partner-page   #myCarousel .carousel-control img {
+        width: auto;
+        height: 40px;
+      }
+      .partner-page   #myCarousel .carousel-control.right {
+    right: 0px;
+}
   #carousel-stacked .img-responsive {
     width: 345px!important;
     height: 400px!important;
