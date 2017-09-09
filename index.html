@@ -181,6 +181,16 @@
 				$('.btn-slideshow').addClass('animated pulse');
 				$('.navbar-nav>li').addClass('animated pulse');
 			});
+
+									jQuery('.navbar-toggle').on('click', function(){
+										if (!jQuery('.navbar-collapse').hasClass('in')){
+											$('.slideshow-text > *').hide();
+											$('.btn-slideshow ').hide();
+										} else {
+											$('.slideshow-text > *').show();
+											$('.btn-slideshow ').show();
+										}
+									});
 			</script>
 		</body>
 	</html>

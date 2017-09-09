@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href"css/animate.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
@@ -123,11 +123,12 @@
 					</div>
 				</div>
 				<!-- Carousel controls -->
-				<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev" style="height: 70px;">
+					<img src="./content/buttons/carousel-left.png" style="height: 70px;">
         </a>
+
 				<a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
+					<img src="./content/buttons/carousel-right.png" style="height: 70px;">
         </a>
 			</div>
 		</div>
@@ -192,7 +193,7 @@
 		</div>
 	</div>
 	<div class="container-mobilefooter show-xs hidden-sm hidden-md hidden-lg">
-		<div class="row">
+		<div class="row p-mobilefooter">
 			<div class="col-xs-12 col-sm-12 col-lg-6 buttons-style-footer show-xs hidden-sm hidden-md hidden-lg">
 				<a href=""><img src="http://54.166.30.152/content/buttons/appstore_button.png" alt="apple"> </a>
 			</div>
@@ -264,6 +265,16 @@
 		$('.btn-slideshow').addClass('animated pulse');
 		$('.navbar-nav>li').addClass('animated pulse');
 	});
+
+							jQuery('.navbar-toggle').on('click', function(){
+								if (!jQuery('.navbar-collapse').hasClass('in')){
+									$('.slideshow-text > *').hide();
+									$('.btn-slideshow ').hide();
+								} else {
+									$('.slideshow-text > *').show();
+									$('.btn-slideshow ').show();
+								}
+							});
 	</script>
 </body>
 
