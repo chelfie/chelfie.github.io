@@ -4,15 +4,17 @@
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
 			<title>Chelfie - App </title>
-			<!-- Bootstrap -->
+
 			<link href="css/bootstrap.min.css" rel="stylesheet">
-			<link href="css/custom.css" rel="stylesheet">
 			<link href"css/animate.css" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+			<link href="css/custom.css" rel="stylesheet">
 	</head>
 
-	<body>
+	<body class="app-page">
 
 		<!--Background Video-->
 		<div class="imgContainer fullscreen-bg hidden-xs">
@@ -45,7 +47,7 @@
 								<img class="img-responsive" src="http://54.166.30.152/content/logo/chelfiewhite_logo.png" /></a>
 							</div>
 							<div class="logo-mobile show-xs hidden-sm hidden-md hidden-lg">
-							<img class="img-responsive" src="http://54.166.30.152/content/logo/logo_mobile.png"  /></a>
+							<a href="index.html"><img class="img-responsive" src="http://54.166.30.152/content/logo/logo_mobile.png"  /></a>
 						</div>
 					</div>
 				</div>
@@ -238,7 +240,7 @@
 								</div>
 								</div>
 								<div class="container-mobilefooter container show-xs hidden-sm hidden-md hidden-lg">
-								<div class="row">
+								<div class="row p-mobilefooter">
 									<div class="col-xs-12 col-sm-12 col-lg-6 buttons-style-footer show-xs hidden-sm hidden-md hidden-lg">
 										<a  href=""><img src="http://54.166.30.152/content/buttons/appstore_button.png" class="img-responsive" alt="apple"> </a>
 									</div>
@@ -266,29 +268,29 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-lg-6"> <!--Social Media-->
-								<div class="footer-social-icons">
-									<ul class="social-icons">
-										<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0" >
-											<a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a>
-										</div>
-										<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0" >
-											<a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a>
-										</div>
-										<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0" >
-											<a href="#" class="social-icon"> <i class="fa fa-pinterest"></i></a>
-										</div>
-										<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0" >
-											<a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a>
-										</div>
-										<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0" >
-											<a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a>
-										</div>
-										<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0" >
-											<a href="#" class="social-icon"> <i class="fa fa-instagram"></i></a>
-										</div>
-									</ul>
+									<div class="footer-social-icons">
+										<ul class="social-icons">
+											<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
+												<a href="https://www.facebook.com/chelfieapp" class="social-icon"> <i class="fa fa-facebook"></i></a>
+											</div>
+											<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
+												<a href="https://www.twitter.com/chelfieapp" class="social-icon"> <i class="fa fa-twitter"></i></a>
+											</div>
+											<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
+												<a href="https://www.pinterest.com/chelfieapp" class="social-icon"> <i class="fa fa-pinterest"></i></a>
+											</div>
+											<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
+												<a href="https://www.youtube.com/chelfieapp" class="social-icon"> <i class="fa fa-youtube"></i></a>
+											</div>
+											<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
+												<a href="https://www.linkedin.com/chelfieapp" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+											</div>
+											<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
+												<a href="https://www.instagram.com/chelfieapp" class="social-icon"> <i class="fa fa-instagram"></i></a>
+											</div>
+										</ul>
 
-								</div>
+									</div>
 								</div> <!--EndSocial Media-->
 							</div>
 
@@ -304,25 +306,20 @@
 						<!-- Include all compiled plugins (below), or include individual files as needed -->
 						<script src="js/bootstrap.min.js"></script>
 						<script>
-									$(document).ready(function(){
-						    $('.btn-primary').each(function() {
-						        animationHover(this, 'bounce');
-						    });
+						jQuery(window).ready(function(){
+							$('.btn-slideshow').addClass('animated pulse');
+							$('.navbar-nav>li').addClass('animated pulse');
 						});
 
-						function animationHover(element, animation){
-			    element = $(element);
-			    element.hover(
-			        function() {
-			            element.addClass('animated ' + animation);
-			        },
-			        function(){
-			            //wait for animation to finish before removing classes
-			            window.setTimeout( function(){
-			                element.removeClass('animated ' + animation);
-			            }, 2000);
-			        });
-			}
+												jQuery('.navbar-toggle').on('click', function(){
+													if (!jQuery('.navbar-collapse').hasClass('in')){
+														$('.slideshow-text > *').hide();
+														$('.btn-slideshow ').hide();
+													} else {
+														$('.slideshow-text > *').show();
+														$('.btn-slideshow ').show();
+													}
+												});
 						</script>
 					</body>
 				</html>

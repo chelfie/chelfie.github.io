@@ -5,16 +5,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
 	<title>Chelfie - Help </title>
-	<!-- Bootstrap -->
+
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 	<link href="css/custom.css" rel="stylesheet">
-	<link href"css/animate.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="help=page">
 
 	<!--Background Video-->
 	<div class="imgContainer fullscreen-bg hidden-xs">
@@ -47,7 +48,7 @@
 									<img src="http://54.166.30.152/content/logo/chelfiewhite_logo.png" /></a>
 							</div>
 							<div class="logo-mobile show-xs hidden-sm hidden-md hidden-lg">
-								<img src="http://54.166.30.152/content/logo/logo_mobile.png" /></a>
+								<a href="index.html"><img src="http://54.166.30.152/content/logo/logo_mobile.png" /></a>
 							</div>
 						</div>
 					</div>
@@ -77,7 +78,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<a href="#topic1" type="button" class="btn btn-primary btn-lg btn-slideshow btn-round">FAQ</a>
+					<a href="#accordion" type="button" class="btn btn-primary btn-lg btn-slideshow btn-round">FAQ</a>
 				</div>
 			</div>
 		</div>
@@ -93,7 +94,8 @@
 			<h1>Help</h1>
 			<div class="col-md-6">
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					<h3> <span class="glyphicon glyphicon-phone"></span> App</h3>
+					<h3 class="ghelp-h3" style="color: black; font-weight: 600;"><img src="content/helpicons/icon-usingtheapp.png" style="height: 70px;"> App</h3>
+
 
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingOne">
@@ -127,7 +129,57 @@
 						</div>
 						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 							<div class="panel-body">
-								<p>Chelfie is fun and simple to use! Once you’ve created your account, you can start exploring the app to see it’s different features. For a step by step tutorial on how to use Chelfie <a href="http://54.166.30.152/partner.html">click here. </a>									</p>
+
+								<ol class="using-app">
+										<li>Start at the login screen. Click on the sign up button to create an account. You can either sign up with your email or link the app directly through facebook. </li>
+										<li>After you sign up, the app will take you directly to the home screen.</li>
+										<li>Home screen: Anytime you open the app it will direct you right to the camera. Tap the larger circle icon to capture an image and you will then be able to unleash your creativity.</li>
+													<ul class="using-app-ul" style="padding-left: 50px;">
+														<li>Tap the pencil icon to write text.</li>
+														<li>Tap the three circle icon to doodle to your hearts content.</li>
+														<li>Tap the scissors icon to edit your picture by cropping it or rotating the image.</li>
+														<li>Tap the button that says Save so your photo will save onto your camera roll</li>
+													</ul>
+										<li>Sending a Chelfie:</li>
+												<ul class="using-app-ul" style="padding-left: 50px;">
+														<li>Tap the pencil icon to write text.</li>
+														<li>Tap the three circle icon to doodle to your hearts content.</li>
+														<li>Tap the scissors icon to edit your picture by cropping it or rotating the image.</li>
+														<li>Tap the button that says Save so your photo will save onto your camera roll</li>
+													</ul>
+														<li>Tap the checkmark icon to add it to your looks.</li>
+														<li>Tap the Share to… button to share it with your friends on social media.</li>
+														<li>To send a private message scroll down and tap their name or find them in the search bar at the top.</li>
+														<li>Adding your friends:</li>
+												<ul class="using-app-ul" style="padding-left: 50px;">
+													<li>Take a chelfie</li>
+														<li>Tap the send button</li>
+														<li>Tap the circular icon in the top right hand corner</li>
+														<li>On this screen, you can either invite your friends by tapping on the Invite button in the top right hand corner or you can type their name in the search bar at the top and click the follow button</li>
+												</ul>
+										<li>Shop with Friends</li>
+													<ul class="using-app-ul" style="padding-left: 50px;">
+															<li>Tap the ShopWFriends icon to take you to your direct messages.</li>
+															<li>You are automatically presented your received messages where you can tap a friend's name to view their message.</li>
+															<li>Swipe left to dislike and right to like.</li>
+															<li>Tap the Shop the Look button to view where they purchased it or a similar item</li>
+															<li>Tap on the sent button to view the number of likes and dislikes for the messages you already sent.</li>
+													</ul>
+										<li>Shop</li>
+													<ul class="using-app-ul" style="padding-left: 50px;">
+															<li>Tap the Shop icon on the bottom right corner of the home screen</li>
+																	<ul class="using-app-ul" style="padding-left: 50px;">
+																				<li>Swipe a picture to right, to like it</li>
+																				<li>Swipe a picture to the left to dislike it</li>
+																	</ul>
+															<li>When you find something you like, tap on the Shop The Look button which is located at the top of your screen. Our advanced AI technology will show you products that are either similar or exact, to those in the picture</li>
+																		<ul class="using-app-ul" style="padding-left: 50px;">
+																			<li>Tap the Buy button to be redirected to the retailer's website where you can purchase the item</li>
+																			<li>Tap the circular button with a question mark in it to send the item externally</li>
+																			<li>Tap the circular button with a heart in it to like the item</li>
+																		</ul>
+													</ul>
+									</ol>
 							</div>
 						</div>
 					</div>
@@ -143,14 +195,15 @@
 
 				<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
 
-					<h3> <span class="glyphicon glyphicon-shopping-cart"></span> Shopping on Solebrity</h3>
+					<span><h3 class="ghelp-h3" style="color: black; font-weight: 600;"><img src="content/helpicons/icon-icon-shoppingonchelfie.png" style="height: 70px;"></span> Shopping on Chelfie</h3>
 
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwo">
 							<h4 class="panel-title">
 									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
-										 Can I shop on Chelfie?
+										 What brands are featured on Chelfie?
 										 <span class="pull-right">
+
 											<i class="glyphicon glyphicon-plus"> </i> </span>
 
 
@@ -159,7 +212,7 @@
 						</div>
 						<div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 							<div class="panel-body">
-								<p>See something you like? You can shop on Chelfie too! On the top left of your main feed screen you’ll see a button that will show you similar products to the item in the picture.</p>
+								<p>For an extensive list, click here to see who we partnered with to bring you the latest and most popular clothing items. </p>
 							</div>
 						</div>
 					</div>
@@ -187,7 +240,7 @@
 						<div class="panel-heading" role="tab" id="headingTwo">
 							<h4 class="panel-title">
 									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo">
-										 Will my order be delivered to me?
+										 How will my order be delivered to me?
 										 <span class="pull-right">
 											<i class="glyphicon glyphicon-plus"> </i> </span>
 
@@ -225,7 +278,7 @@
 						<div class="panel-heading" role="tab" id="headingTwo">
 							<h4 class="panel-title">
 									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo6" aria-expanded="false" aria-controls="collapseTwo">
-										Can I earn on Chelfie?
+										Can I earn rewards on Chelfie?
 										 <span class="pull-right">
 											<i class="glyphicon glyphicon-plus"> </i> </span>
 
@@ -234,7 +287,14 @@
 						</div>
 						<div id="collapseTwo6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 							<div class="panel-body">
-								<p>The answer is Yes!</p>
+								<p>Yes! We share 10% of our earned revenue from each product you endorse that results in a purchase by one of your followers
+								<br>
+								<br>
+								<b>Cash out:</b> Once you’ve reached $20 in your account, you can cash out by tapping the button and sending the money to your paypal account. More cash out options will be forthcoming
+								<br>
+								<br>
+								<b>Badges:</b> The more items your followers purchase, the higher your badge level, qualifying you for VIP treatments, free items, and other rewards (on top of the cash you already earn from Chelfie). You can find the badge level under your profile.
+</p>
 							</div>
 						</div>
 					</div>
@@ -249,7 +309,7 @@
 
 
 				<div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
-					<h3> <span class="glyphicon glyphicon-user"></span> Profile and Account</h3>
+					<<span><h3 class="ghelp-h3" style="color: black; font-weight: 600;"><img src="content/helpicons/icon-profileandaccount.png" style="height: 70px;"></span> Profile and Account</h3>
 
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwo">
@@ -331,7 +391,7 @@
 					<div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
 
 
-						<h3> <span class="glyphicon glyphicon-list-alt"></span> Orders</h3>
+						<span><h3 class="ghelp-h3" style="color: black; font-weight: 600;"><img src="content/helpicons/icon-orders.png" style="height: 70px;"></span> Orders</h3>
 
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingTwo">
@@ -382,7 +442,7 @@
 
 
 					<div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
-						<h3> <span class="glyphicon glyphicon-send"></span> Shipping</h3>
+						 <span><h3 class="ghelp-h3" style="color: black; font-weight: 600;"><img src="content/helpicons/icon-shipping.png" style="height: 70px;"></span> Shipping</h3>
 
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingTwo">
@@ -426,7 +486,7 @@
 
 
 					<div class="panel-group" id="accordion7" role="tablist" aria-multiselectable="true">
-						<h3> <span class="glyphicon glyphicon-transfer"></span> Returns</h3>
+						<span><h3 class="ghelp-h3" style="color: black; font-weight: 600;"><img src="content/helpicons/icon-returns.png" style="height: 70px;"></span> Returns</h3>
 
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingTwo">
@@ -481,7 +541,7 @@
 		</div>
 	</div>
 	<div class="container-mobilefooter show-xs hidden-sm hidden-md hidden-lg">
-		<div class="row">
+		<div class="row p-mobilefooter">
 			<div class="col-xs-12 col-sm-12 col-lg-6 buttons-style-footer show-xs hidden-sm hidden-md hidden-lg">
 				<a href=""><img src="http://54.166.30.152/content/buttons/appstore_button.png" alt="apple"> </a>
 			</div>
@@ -513,22 +573,22 @@
 			<div class="footer-social-icons">
 				<ul class="social-icons">
 					<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
-						<a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a>
+						<a href="https://www.facebook.com/chelfieapp" class="social-icon"> <i class="fa fa-facebook"></i></a>
 					</div>
 					<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
-						<a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a>
+						<a href="https://www.twitter.com/chelfieapp" class="social-icon"> <i class="fa fa-twitter"></i></a>
 					</div>
 					<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
-						<a href="#" class="social-icon"> <i class="fa fa-pinterest"></i></a>
+						<a href="https://www.pinterest.com/chelfieapp" class="social-icon"> <i class="fa fa-pinterest"></i></a>
 					</div>
 					<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
-						<a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a>
+						<a href="https://www.youtube.com/chelfieapp" class="social-icon"> <i class="fa fa-youtube"></i></a>
 					</div>
 					<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
-						<a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+						<a href="https://www.linkedin.com/chelfieapp" class="social-icon"> <i class="fa fa-linkedin"></i></a>
 					</div>
 					<div class="col-xs-1 col-xs-push-2 col-md-1 col-md-push-0">
-						<a href="#" class="social-icon"> <i class="fa fa-instagram"></i></a>
+						<a href="https://www.instagram.com/chelfieapp" class="social-icon"> <i class="fa fa-instagram"></i></a>
 					</div>
 				</ul>
 
@@ -550,6 +610,22 @@
 	<script src="js/bootstrap.min.js"></script>
 
 	<script src="js/help.js"></script>
+	<script>
+	jQuery(window).ready(function(){
+		$('.btn-slideshow').addClass('animated pulse');
+		$('.navbar-nav>li').addClass('animated pulse');
+	});
+
+							jQuery('.navbar-toggle').on('click', function(){
+								if (!jQuery('.navbar-collapse').hasClass('in')){
+									$('.slideshow-text > *').hide();
+									$('.btn-slideshow ').hide();
+								} else {
+									$('.slideshow-text > *').show();
+									$('.btn-slideshow ').show();
+								}
+							});
+	</script>
 </body>
 
 </html>
