@@ -4,12 +4,19 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>Chelfie - About </title>
-
+		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
- 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<link href="css/custom.css" rel="stylesheet">
+		<link href"css/animate.css" rel="stylesheet">
 
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 	<body class="about-page">
 
@@ -44,7 +51,7 @@
 								<img src="http://54.166.30.152/content/logo/chelfiewhite_logo.png" /></a>
 							</div>
 							<div class="logo-mobile show-xs hidden-sm hidden-md hidden-lg">
-							<a href="index.html"><img src="http://54.166.30.152/content/logo/logo_mobile.png"  /></a>
+							<img src="http://54.166.30.152/content/logo/logo_mobile.png"  /></a>
 						</div>
 					</div>
 				</div>
@@ -52,11 +59,11 @@
 
 					<ul class="nav navbar-nav navbar-right">
 						<!-- <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li> -->
-						<li><a  href="app.html">App</a></li>
-						<li><a  href="how.html">How</a></li>
-						<li><a  href="partner.html">Partner</a></li>
-						<li><a  href="media.html">Media</a></li>
-						<li><a  href="https://blog.solebrity.me">Blog</a></li>
+						<li><a href="app.html">App</a></li>
+						<li><a href="how.html">How</a></li>
+						<li><a href="partner.html">Partner</a></li>
+						<li><a href="media.html">Media</a></li>
+						<li><a href="https://blog.solebrity.me">Blog</a></li>
 					</ul>
 					</div><!--/.nav-collapse -->
 				</div>
@@ -73,12 +80,11 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<a href="" type="button" class="btn animated bounce btn-primary btn-lg btn-slideshow btn-round">our team</a>
+					<a href="" type="button" class="btn btn-primary btn-lg btn-slideshow btn-round">our team</a>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 
 
@@ -228,7 +234,7 @@
 								</div>
 								</div>
 								<div class="container-mobilefooter show-xs hidden-sm hidden-md hidden-lg">
-								<div class="row p-mobilefooter">
+								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-lg-6 buttons-style-footer show-xs hidden-sm hidden-md hidden-lg">
 										<a  href=""><img src="http://54.166.30.152/content/buttons/appstore_button.png" alt="apple"> </a>
 									</div>
@@ -293,21 +299,5 @@
 						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 						<!-- Include all compiled plugins (below), or include individual files as needed -->
 						<script src="js/bootstrap.min.js"></script>
-						<script>
-						jQuery(window).ready(function(){
-							$('.btn-slideshow').addClass('animated pulse');
-							$('.navbar-nav>li').addClass('animated pulse');
-						});
-
-												jQuery('.navbar-toggle').on('click', function(){
-													if (!jQuery('.navbar-collapse').hasClass('in')){
-														$('.slideshow-text > *').hide();
-														$('.btn-slideshow ').hide();
-													} else {
-														$('.slideshow-text > *').show();
-														$('.btn-slideshow ').show();
-													}
-												});
-						</script>
 					</body>
 				</html>
