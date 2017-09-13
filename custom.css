@@ -1153,6 +1153,7 @@ left: -50px;  }
   }
   body.about-page .team-row .profile{
     margin-bottom: 50px;
+    min-height: 250px;
   }
   body.about-page .team-row .profile h5{
     margin-top: 15px;
